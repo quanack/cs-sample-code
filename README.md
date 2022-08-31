@@ -9,7 +9,7 @@
 
 ### How to use:
 
-Exectue the following command:
+1. Exectue the following command:
 
 ```
 comoser install
@@ -17,7 +17,7 @@ npm install
 cp .env.example .env
 ```
 
-Set up database server and edit .env file:
+2. Set up database server and edit .env file:
 
 Update database section to preferred database:
 
@@ -41,7 +41,7 @@ DB_USERNAME={database username}
 DB_PASSWORD={database password}
 ```
 
-Build and run local server:
+3. Build and run local server:
 
 ``` 
 npm run build
