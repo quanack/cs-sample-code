@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MainController::class, 'index']);
+
+Route::middleware(['auth'])->group(function () {
+    Route::post('addbookmark', [MainController::class, 'addBookmark']);
+});
+
+Route::prefix('user')->group(function () {
+    Route::controller(UserController::class)->group(function () {
+        Route::get('signup', 'signup');
+        Route::post('register', 'register');
+        Route::get('/logout', 'logout');
+        Route::get('/login', 'login');
+        Route::post('/login', 'loginPost');
+    });
+});

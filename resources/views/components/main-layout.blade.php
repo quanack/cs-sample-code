@@ -9,6 +9,12 @@
 </head>
 
 <body class="bg-gray-100">
-    {{ $slot }}
+    <div class="container m-auto">
+        <div id="content">
+            <x-main-menu />
+            {{ $slot }}
+        </div>
+    </div>
 </body>
+
 </html>

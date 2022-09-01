@@ -15,11 +15,10 @@
 comoser install
 npm install
 cp .env.example .env
+php artisan key:generate
 ```
 
-2. Set up database server and edit .env file:
-
-Update database section to preferred database:
+2. Set up database server and edit .env file. Update database section to preferred database:
 
 Example MySQL
 ```
