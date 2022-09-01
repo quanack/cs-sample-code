@@ -4,8 +4,6 @@
 
 - [Larvel 9.x](https://laravel.com/docs/9.x)
 - [TailwindCSS](https://tailwindcss.com/)
-- [Alpine.js](https://alpinejs.org/)
-
 
 ### How to use:
 
