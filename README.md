@@ -32,12 +32,9 @@ DB_PASSWORD={database password}
 
 Example SQLite
 ```
-DB_CONNECTION=mysql
-DB_HOST={host_ip}
+DB_CONNECTION=sqlite
+DB_HOST=localhost
 DB_PORT=3306
-DB_DATABASE={database name}
-DB_USERNAME={database username}
-DB_PASSWORD={database password}
 ```
 
 3. Build and run local server:
